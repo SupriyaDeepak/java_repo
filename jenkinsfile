@@ -1,0 +1,18 @@
+node{
+    stage("checkout")
+    {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/SupriyaDeepak/java_repo']]])
+    }
+    stage("Build")
+    {
+        sh label: '', script: 'mvn install'
+    }
+    stage("Test")
+    {
+        echo "test completed"
+    }
+    stage("Deploy")
+    {
+        echo "Deplay done"
+    }    
+}
