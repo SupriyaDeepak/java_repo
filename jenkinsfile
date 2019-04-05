@@ -9,7 +9,7 @@ node{
     }
     stage("Test")
     {
-        echo "test completed"
+        echo "test completed1"
     }
     stage("Deploy")
     {
