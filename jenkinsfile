@@ -13,6 +13,6 @@ node{
     }
     stage("Deploy")
     {
-        echo "Deplay done for the first time aaa"
+        echo "Deplay done for the first time aaabbb"
     }    
 }
