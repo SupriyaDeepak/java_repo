@@ -1,0 +1,10 @@
+---
+instance_limits:
+  min: 1
+  max: 2
+rules:
+  - rule_type: "http_throughput"
+    threshold:
+      min: 19
+      max: 20
+scheduled_limit_changes: []

@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf
+  instances: 1
+  url: cf.cfapps.io
+  path: target/jpetstore.war
+  buildpacks: 
+    - https://github.com/cloudfoundry/java-buildpack.git
+  services:
+  - cf-app-autoscale
