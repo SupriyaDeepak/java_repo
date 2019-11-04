@@ -24,7 +24,7 @@ Essentials
 Running JPetStore sample under Tomcat (using the [cargo-maven2-plugin](https://codehaus-cargo.github.io/cargo/Maven2+plugin.html)).
 
 - Clone this repository
-
+###### changing code
   ```
   $ git clone https://github.com/mybatis/jpetstore-6.git
   ```
