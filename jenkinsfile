@@ -6,7 +6,7 @@ node{
     stage("Build")
     {
         
-        bat(/"${mvnHome}\bin\mvn" -Dintegration-tests.skip=true clean package/)
+        bat(/"${MAVEN_HOME}\bin\mvn" -Dintegration-tests.skip=true clean package/)
     }
     stage("Test")
     {
