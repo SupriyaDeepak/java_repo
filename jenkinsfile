@@ -6,7 +6,7 @@ node{
     stage("Build")
     {
         
-        mvn -Dintegration-tests.skip=true clean package
+        mvn clean package
     }
     stage("Test")
     {
