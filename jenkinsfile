@@ -5,7 +5,7 @@ node{
     }
     stage("Build")
     {
-        #sh label: '', script: 'mvn install'
+        
         bat(/"${mvnHome}\bin\mvn" -Dintegration-tests.skip=true clean package/)
     }
     stage("Test")
